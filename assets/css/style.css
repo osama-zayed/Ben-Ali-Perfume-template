@@ -1,6 +1,6 @@
 :root {
   --dark-color: #040404;
-  --red-color: #ff3150;
+  --gray-color: #f1f1f1;
   --yellow-color: #aa892f;
   --section-color: #fff;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .main-btn {
-  background-color: var(--red-color);
+  background-color: var(--gray-color);
   color: var(--yellow-color);
   padding: 0.5rem 1rem;
 }
@@ -125,32 +125,27 @@ marquee {
   }
 }
 
-
-/* End Landing */
-/* Start Features */
-.features .icon-holder {
-  height: 200px;
+/* Start Comments */
+.comment-container {
+  width: 20rem;
+  border-left: rgb(238, 238, 238) solid 0.2px;
 }
 
-.features .icon-holder svg {
-  left: 50%;
-  transform: translateX(-50%);
+.comment-container .user .user-pic {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border-radius: 50%;
 }
 
-.features .icon-holder .number {
-  font-size: 12rem;
-  color: var(--section-color);
+.comment-container .user-info svg {
+  color: #fbbf24;
 }
-
-.features .icon-holder .icon {
-  color: var(--yellow-color);
-}
-
-.features .feat h4 {
-  color: var(--yellow-color);
-}
-
-/* End Features */
+/* End Comments */
 /* Start Product Section */
 .product-section {
   padding: 50px 0;
@@ -257,7 +252,8 @@ marquee {
   margin: 3% auto;
   width: 40%;
 }
-.search-modal-content .form-control{
+
+.search-modal-content .form-control {
   background-color: var(--section-color);
   color: var(--dark-color);
   padding: 15px;
@@ -265,6 +261,7 @@ marquee {
   border: none;
   box-shadow: none;
 }
+
 .search-modal-content .form-control:focus {
   outline: none;
   box-shadow: none;
@@ -275,10 +272,10 @@ marquee {
   position: relative;
 }
 
-.search-modal-content .form-control-wrapper button{
+.search-modal-content .form-control-wrapper button {
   position: absolute;
   left: 15px;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   color: #6c757d;
   background-color: transparent;
@@ -292,6 +289,12 @@ marquee {
 }
 
 /* End search*/
+
+/* Start Trademarks-section */
+.trademarks-section{
+background-color: var(--gray-color);
+}
+/* End Trademarks-section*/
 
 /* Start Footer */
 
