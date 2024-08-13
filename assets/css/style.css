@@ -212,7 +212,6 @@ marquee {
 }
 
 .btn-group .btn svg {
-  border-radius: 50%;
   padding: 10px;
   border: 1px solid var(--dark-color);
   transition: 0.5s;
