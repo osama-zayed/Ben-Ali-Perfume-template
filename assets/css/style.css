@@ -5,6 +5,20 @@
   --section-color: #fff;
 }
 
+a {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: var(--dark-color);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   direction: rtl;
@@ -35,8 +49,9 @@ body {
 .navbar {
   background-color: var(--section-color);
 }
-.navbar .navbar-brand img{
- width: 150px;
+
+.navbar .navbar-brand img {
+  width: 150px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -53,6 +68,7 @@ body {
   color: var(--dark-color);
   transition: 0.2s;
 }
+
 .navbar .icon:hover svg {
   color: var(--yellow-color);
 }
@@ -95,11 +111,13 @@ marquee {
     min-height: calc(70vh - 82px);
   }
 }
+
 @media (max-width: 769px) {
   .landing {
     min-height: calc(60vh - 82px);
   }
 }
+
 @media (max-width: 425px) {
   .landing {
     min-height: calc(40vh - 82px);
@@ -182,24 +200,29 @@ marquee {
   z-index: 20;
   transition: 0.5s;
 }
+
 .btn-group .btn-add-card {
   color: var(--section-color);
-  background-color: var(--dark-color); 
+  background-color: var(--dark-color);
 }
+
 .btn-group .btn-add-card:hover {
   color: var(--dark-color);
-  background-color: var(--yellow-color); 
+  background-color: var(--yellow-color);
 }
-.btn-group .btn svg{
-  border-radius: 50% ; 
+
+.btn-group .btn svg {
+  border-radius: 50%;
   padding: 10px;
-  border: 1px solid var(--dark-color); 
+  border: 1px solid var(--dark-color);
   transition: 0.5s;
 }
-.btn-group .btn:hover svg{
+
+.btn-group .btn:hover svg {
   color: var(--dark-color);
-  background-color: var(--yellow-color); 
+  background-color: var(--yellow-color);
 }
+
 /* @media (max-width: 767px) {
   .product-card img {
     height: 30%;
@@ -216,21 +239,23 @@ marquee {
 /* End Product Section */
 
 /* Start Card*/
-.Card img{
+.Card img {
   min-height: 35vh;
   min-width: 100%;
 }
+
 @media (max-width: 769px) {
-  .Card img{
+  .Card img {
     min-height: 20vh;
   }
 }
+
 /* End Card*/
 
 /* Start Footer */
-.footer {
+/* .footer {
   background-color: var(--dark-color);
-}
+} */
 
 .footer .copyright>span {
   color: var(--yellow-color);
