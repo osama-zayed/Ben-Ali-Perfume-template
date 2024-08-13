@@ -48,7 +48,7 @@
             <a class="nav-link p-2 p-lg-3" href="#">عطور النيش الحصرية</a>
           </li>
         </ul>
-        <div class="icon ps-3 pe-3 d-none d-lg-block">
+        <div class="icon ps-3 pe-3 d-none d-lg-block" onclick="openSearchModal()">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="icon ps-3 pe-3 d-none d-lg-block">
@@ -60,6 +60,17 @@
       </div>
     </div>
   </nav>
+
+  <div id="searchModal" class="search-modal">
+    <div class="search-modal-content">
+      <form>
+        <div class="form-control-wrapper">
+          <button type="submit" class=""><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="text" name="" class="form-control" placeholder="ادخل كلمة البحث" autofocus>
+        </div>
+      </form>
+    </div>
+  </div>
 
 
   <marquee class="pt-2 pb-2" behavior="active" direction="lacinia">
@@ -420,6 +431,18 @@
   </footer>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/all.min.js"></script>
+
+  <script>
+    function openSearchModal() {
+      document.getElementById("searchModal").style.display = "block";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == document.getElementById("searchModal")) {
+        document.getElementById("searchModal").style.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>
