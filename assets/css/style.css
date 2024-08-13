@@ -1,5 +1,5 @@
 :root {
-  --dark-color: #090202;
+  --dark-color: #040404;
   --red-color: #ff3150;
   --yellow-color: #aa892f;
   --section-color: #fff;
@@ -13,10 +13,11 @@ a {
   text-decoration: none;
   color: inherit;
   transition: 0.4s;
+  color: #6c757d;
 }
 
 a:hover {
-  color: var(--dark-color);
+  color: var(--yellow-color);
 }
 
 body {
@@ -258,7 +259,7 @@ marquee {
 }
 .search-modal-content .form-control{
   background-color: var(--section-color);
-  color: var(--section-color);
+  color: var(--dark-color);
   padding: 15px;
   outline: none;
   border: none;

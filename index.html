@@ -51,8 +51,19 @@
         <div class="icon ps-3 pe-3 d-none d-lg-block" onclick="openSearchModal()">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <div class="icon ps-3 pe-3 d-none d-lg-block">
-          <i class="fa-solid fa-user"></i>
+        <div class="icon ps-3 pe-3 d-none d-lg-block dropdown">
+          <a class="dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item text-end" href="#"><i class="fa-solid fa-bell"></i> الاشعارات</a></li>
+            <li><a class="dropdown-item text-end" href="#"><i class="fa-solid fa-list-check"></i> الطلبات</a></li>
+            <li><a class="dropdown-item text-end" href="#"><i class="fa-solid fa-credit-card"></i> طلبات بانتظار الدفع</a></li>
+            <li><a class="dropdown-item text-end" href="#"><i class="fa-solid fa-heart"></i> المفضلة</a></li>
+            <li><a class="dropdown-item text-end" href="#"><i class="fa-solid fa-user"></i> حسابي</a></li>
+            <li><a class="dropdown-item text-end" href="#"><i class="fa-solid fa-sign-out"></i> تسجيل الخروج</a></li>
+          </ul>
         </div>
         <div class="icon ps-3 pe-3 d-none d-lg-block">
           <i class="fa-solid fa-cart-shopping"></i>
@@ -329,6 +340,16 @@
       </div>
     </div>
   </section>
+  <section class="product-section text-center">
+    <div class="container">
+      <div class="d-flex justify-content-evenly mt-1 mb-1">
+        <img class="img-fluid" src="assets/imgs/tech-3.png" alt="" />
+        <img class="img-fluid" src="assets/imgs/tech-4.png" alt="" />
+        <img class="img-fluid" src="assets/imgs/tech-1.png" alt="" />
+        <img class="img-fluid" src="assets/imgs/tech-2.png" alt="" />
+      </div>
+    </div>
+  </section>
 
   <footer class="footer pt-5 pb-2 text-black-50 text-md-end">
     <div class="container">
@@ -350,12 +371,24 @@
           <div class="links">
             <h5 class="">روابط مهمة</h5>
             <ul class="list-unstyled lh-lg">
-              <li>من نحن</li>
-              <li>سياسة الخصوصية</li>
-              <li>معلومات الدفع والتوصيل</li>
-              <li>اتفاقية الاستخدام</li>
-              <li>ماهي العطور المستوحاة</li>
-              <li>ليش تختارنا</li>
+              <a class="d-block" href="">
+                <li>من نحن</li>
+              </a>
+              <a class="d-block" href="">
+                <li>سياسة الخصوصية</li>
+              </a>
+              <a class="d-block" href="">
+                <li>معلومات الدفع والتوصيل</li>
+              </a>
+              <a class="d-block" href="">
+                <li>اتفاقية الاستخدام</li>
+              </a>
+              <a class="d-block" href="">
+                <li>ماهي العطور المستوحاة</li>
+              </a>
+              <a class="d-block" href="">
+                <li>ليش تختارنا</li>
+              </a>
             </ul>
           </div>
         </div>
@@ -363,11 +396,20 @@
           <div class="links">
             <h5 class="">حسابي</h5>
             <ul class="list-unstyled lh-lg">
-              <li>الاشعارات</li>
-              <li>الطلبات</li>
-              <li>طلبات بانتظار الدفع</li>
-              <li>حسابي</li>
-              <li>تسجيل الخروج</li>
+              <a class="d-block" href="">
+                <li>الاشعارات</li>
+              </a>
+              <a class="d-block" href="">
+                <li>الطلبات</li>
+              </a>
+              <a class="d-block" href="">
+                <li>طلبات بانتظار الدفع</li>
+                <a class="d-block" href="">
+                  <li>حسابي</li>
+                </a>
+                <a class="d-block" href="">
+                  <li>تسجيل الخروج</li>
+                </a>
             </ul>
           </div>
         </div>
@@ -419,13 +461,6 @@
               زايد</a></span>
           <span><a href="tel:+967775561590">775561590</a></span>
         </div>
-        <div class="d-flex justify-content-evenly mt-1 mb-1">
-          <img class="img-fluid" src="assets/imgs/tech-3.png" alt="" />
-          <img class="img-fluid" src="assets/imgs/tech-4.png" alt="" />
-          <img class="img-fluid" src="assets/imgs/tech-1.png" alt="" />
-          <img class="img-fluid" src="assets/imgs/tech-2.png" alt="" />
-        </div>
-
       </div>
     </div>
   </footer>
