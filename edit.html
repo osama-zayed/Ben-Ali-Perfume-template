@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand" href="#">Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="create.html">New post</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Home Section -->
+
+    <section id="home">
+        <div class="container-fluid p-0 ">
+            <div class="row no-gutters">
+                <div class="col-md-12">
+                    <img src="assets/images/wp8962617-moon-and-star-4k-wallpapers.jpg"
+                        class=" w-100 h-75 object-fit-cover" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <h1 class="mb-5 text-center">Edit Post</h1>
+        <form method="POST" action="http://127.0.0.1:8000/posts/1">
+            <input type="hidden" name="_token" value="CXdl5bwpzuij2zTDn1cy1sJHjtWP2tguddhCkejp" autocomplete="off">
+            <input type="hidden" name="_method" value="PUT">
+            <div class="mb-3">
+                <label for="title" class="form-label">HTML</label>
+                <input type="text" name="title" class="form-control" value="Html" id="title" aria-describedby="title">
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea name="description" class="form-control" id="description" cols="30"
+                    rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nihil itaque accusamus aliquam, sed reprehenderit quaerat, ex laborum, optio voluptatem aperiam? Doloribus reprehenderit nisi totam impedit nam ullam pariatur ipsam.</textarea>
+            </div>
+            <div class="mb-3">
+                <label for="post_creator" class="form-label">Post Creator</label>
+                <select name="post_creator" class="form-control" id="post_creator">
+                    <option value="1">Osama</option>
+                    <option value="1">Ali</option>
+                    <option value="1">Ahmed</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-5">Submit</button>
+        </form>
+    </section>
+    <footer class="footer mt-auto py-3 bg-dark text-light text-center">
+        <div class="container">
+            <span class="text-muted">&copy; 2024 Your Company. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

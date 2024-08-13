@@ -1,0 +1,264 @@
+:root {
+  --dark-color: #090202;
+  --red-color: #ff3150;
+  --yellow-color: #aa892f;
+  --section-color: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  direction: rtl;
+}
+
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+  color: var(--yellow-color);
+}
+
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--yellow-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Start Navbar */
+.navbar {
+  background-color: var(--section-color);
+}
+.navbar .navbar-brand img{
+ width: 150px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--yellow-color);
+}
+
+.navbar .icon svg {
+  color: var(--dark-color);
+  transition: 0.2s;
+}
+.navbar .icon:hover svg {
+  color: var(--yellow-color);
+}
+
+.navbar .navbar-toggler {
+  color: var(--dark-color);
+  font-size: 25px;
+  border-color: var(--section-color);
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--yellow-color);
+}
+
+marquee {
+  color: var(--section-color);
+  background-color: var(--dark-color);
+  z-index: 10;
+}
+
+/* End Navbar */
+/* Start Landing */
+.landing {
+  margin-top: -10px;
+  min-height: calc(100vh - 82px);
+  background-image: url('../imgs/landing.webp');
+  background-color: var(--dark-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+@media (max-width: 1025px) {
+  .landing {
+    min-height: calc(70vh - 82px);
+  }
+}
+@media (max-width: 769px) {
+  .landing {
+    min-height: calc(60vh - 82px);
+  }
+}
+@media (max-width: 425px) {
+  .landing {
+    min-height: calc(40vh - 82px);
+  }
+}
+
+
+/* End Landing */
+/* Start Features */
+.features .icon-holder {
+  height: 200px;
+}
+
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+  color: var(--yellow-color);
+}
+
+.features .feat h4 {
+  color: var(--yellow-color);
+}
+
+/* End Features */
+/* Start Product Section */
+.product-section {
+  padding: 50px 0;
+}
+
+.product-card {
+  background-color: var(--section-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  height: 27%;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-bottom: 15px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-group .btn {
+  flex-grow: 1;
+  margin: 0 5px;
+  z-index: 20;
+  transition: 0.5s;
+}
+.btn-group .btn-add-card {
+  color: var(--section-color);
+  background-color: var(--dark-color); 
+}
+.btn-group .btn-add-card:hover {
+  color: var(--dark-color);
+  background-color: var(--yellow-color); 
+}
+.btn-group .btn svg{
+  border-radius: 50% ; 
+  padding: 10px;
+  border: 1px solid var(--dark-color); 
+  transition: 0.5s;
+}
+.btn-group .btn:hover svg{
+  color: var(--dark-color);
+  background-color: var(--yellow-color); 
+}
+/* @media (max-width: 767px) {
+  .product-card img {
+    height: 30%;
+  }
+
+  .product-name {
+    font-size: 1rem;
+  }
+
+  .product-price {
+    font-size: 0.9rem;
+  }
+} */
+/* End Product Section */
+
+/* Start Card*/
+.Card img{
+  min-height: 35vh;
+  min-width: 100%;
+}
+@media (max-width: 769px) {
+  .Card img{
+    min-height: 20vh;
+  }
+}
+/* End Card*/
+
+/* Start Footer */
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer .copyright>span {
+  color: var(--yellow-color);
+}
+
+.footer .copyright div span {
+  color: var(--yellow-color);
+}
+
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .facebook {
+  background-color: #1877f2;
+}
+
+.footer .twitter {
+  background-color: #1da1f2;
+}
+
+.footer .linkedin {
+  background-color: #0077b5;
+}
+
+.footer .youtube {
+  background-color: #ff0000;
+}
+
+/* End Footer */

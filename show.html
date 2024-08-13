@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand" href="#">Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="create.html">New post</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Show Post Section -->
+    <section id="post" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="card-title text-center mb-3">CSS</h1>
+                    <p class="card-text posted-by text-center text-secondary mb-4">Osama at 2023/8/4</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12"> <img src="assets/images/R.jpeg" class="card-img w-100 mh-50 object-fit-cover"
+                        alt="Post Image"> </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-8 offset-md-2">
+                    <p class="card-text description text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Reiciendis molestias eaque et nobis, distinctio recusandae repudiandae ipsam. Dolores
+                        quidem non et enim. Quod laborum eligendi minima nesciunt repudiandae nam ex.</p>
+                    <div class="d-flex justify-content-end"> <a href="edit.html" type="button" class="btn btn-success">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer mt-auto py-3 bg-dark text-light text-center">
+        <div class="container">
+            <span class="text-muted">&copy; 2024 Your Company. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
