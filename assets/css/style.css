@@ -98,30 +98,29 @@ marquee {
 /* Start Landing */
 .landing {
   margin-top: -10px;
-  min-height: calc(100vh - 82px);
+  min-height: 85vh;
   background-image: url('../imgs/landing.webp');
   background-color: var(--dark-color);
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 
 @media (max-width: 1025px) {
   .landing {
-    min-height: calc(70vh - 82px);
+    min-height: calc(60vh - 82px);
   }
 }
 
 @media (max-width: 769px) {
   .landing {
-    min-height: calc(60vh - 82px);
+    min-height: calc(40vh - 82px);
   }
 }
 
 @media (max-width: 425px) {
   .landing {
-    min-height: calc(40vh - 82px);
+    min-height: calc(30vh - 82px);
   }
 }
 
