@@ -129,8 +129,39 @@ marquee {
   background-color: var(--dark-color);
   z-index: 10;
 }
-
 /* End Navbar */
+/* Start scroll-to-top */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--section-color);
+  color: var(--dark-color);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; /* لضمان أن الزر فوق كل العناصر الأخرى */
+}
+
+.scroll-to-top i {
+  font-size: 20px;
+}
+
+.scroll-to-top.show {
+  opacity: 100;
+  visibility: visible;
+}
+
+/* End scroll-to-top */
 /* Start Landing */
 .landing {
   margin-top: -10px;
