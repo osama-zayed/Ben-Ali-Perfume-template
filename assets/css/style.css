@@ -29,13 +29,15 @@ body {
 }
 
 .main-btn {
-  background-color: var(--gray-color);
-  color: var(--dark-color);
-  padding: 0.5rem 1rem;
+  padding: 10px;
+  color: var(--section-color);
+  background-color: var(--dark-color);
+  transition: 0.5s;
 }
 
 .main-btn:hover {
   color: var(--dark-color);
+  background-color: var(--gray-color);
 }
 
 .main-title::after {
@@ -196,15 +198,7 @@ marquee {
   border: #ff0000;
 }
 
-.btn-group .btn-add-card {
-  padding: 10px;
-  color: var(--section-color);
-  background-color: var(--dark-color);
-}
-.btn-group .btn-add-card:hover {
-  color: var(--dark-color);
-  background-color: var(--gray-color);
-}
+
 
 .btn-group .btn svg {
   padding: 10px;
