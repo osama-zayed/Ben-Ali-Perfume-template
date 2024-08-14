@@ -9,7 +9,7 @@
     content="portfolio, web designing, Designer ,mobile applications ,Osama zayed ,Osama-zayed ,Flutter ,Osama-zayed ,osama zayed ,OSAMA ZAYED , osama Zayed ,osama-zayed  css , JavaScript , bootStarp , ios Portfolio , website , page , animation-page , full-control-website,amazing-Portfolio" />
   <meta name="author" content="osama zayed" />
   <meta name="description" content="my name is Osama i am software Developers ">
-  <title>Blog</title>
+  <title>متجر بن علي للعطور</title>
 
   <link rel="icon" href="assets/imgs/logo.avif" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -24,13 +24,45 @@
 <body>
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="assets/imgs/logo.avif" alt="logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+
+      <div class="d-flex align-items-center justify-content-center"> <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="assets/imgs/logo.avif" alt="logo" />
+        </a>
+      </div>
+      <div class="nav-icon d-lg-none h-25 d-flex align-items-center justify-content-center">
+        <div class="icon ps-3 pe-3 d-lg-none dropdown">
+          <a href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/imgs/user.png" class="img-fluid" alt="">
+          </a>
+          <ul class="dropdown-menu p-2 " aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item ps-5 text-end" href="#"><i class="fa-solid ps-3 px-1 fa-bell"></i> الاشعارات</a>
+            </li>
+            <li><a class="dropdown-item ps-5 text-end" href="#"><i class="fa-solid ps-3 px-1 fa-list-check"></i>
+                الطلبات</a></li>
+            <li><a class="dropdown-item ps-5 text-end" href="#"><i class="fa-solid ps-3 px-1 fa-credit-card "></i> طلبات
+                بانتظار الدفع</a></li>
+            <li><a class="dropdown-item ps-5 text-end" href="#"><i class="fa-solid ps-3 px-1 fa-heart"></i> المفضلة</a>
+            </li>
+            <li><a class="dropdown-item ps-5 text-end" href="#"><i class="fa-solid ps-3 px-1 fa-user"></i> حسابي</a>
+            </li>
+            <li><a class="dropdown-item ps-5 text-end" href="#"><i
+                  class="fa-solid ps-3 px-1 text-danger fa-sign-out"></i> تسجيل الخروج</a></li>
+          </ul>
+
+        </div>
+        <div class="icon ps-3 pe-3 d-lg-none" onclick="openSearchModal()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="icon ps-3 pe-3 d-lg-none">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+
       <div class="collapse navbar-collapse" id="main">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -49,23 +81,29 @@
             <a class="nav-link p-2 p-lg-3" href="#">عطور النيش الحصرية</a>
           </li>
         </ul>
+
+        <div class="icon ps-3 pe-3 d-none d-lg-block dropdown">
+          <a href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/imgs/user.png" class="img-fluid" alt="">
+          </a>
+
+          <ul class="dropdown-menu p-2 " aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item ps-5 text-end" href="#"><i class="fa-solid ps-3 px-1 fa-bell"></i> الاشعارات</a>
+            </li>
+            <li><a class="dropdown-item ps-5 text-end" href="#"><i class="fa-solid ps-3 px-1 fa-list-check"></i>
+                الطلبات</a></li>
+            <li><a class="dropdown-item ps-5 text-end" href="#"><i class="fa-solid ps-3 px-1 fa-credit-card "></i> طلبات
+                بانتظار الدفع</a></li>
+            <li><a class="dropdown-item ps-5 text-end" href="#"><i class="fa-solid ps-3 px-1 fa-heart"></i> المفضلة</a>
+            </li>
+            <li><a class="dropdown-item ps-5 text-end" href="#"><i class="fa-solid ps-3 px-1 fa-user"></i> حسابي</a>
+            </li>
+            <li><a class="dropdown-item ps-5 text-end" href="#"><i
+                  class="fa-solid ps-3 px-1 text-danger fa-sign-out"></i> تسجيل الخروج</a></li>
+          </ul>
+        </div>
         <div class="icon ps-3 pe-3 d-none d-lg-block" onclick="openSearchModal()">
           <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="icon ps-3 pe-3 d-none d-lg-block dropdown">
-          <a class="dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <i class="fa-solid fa-user"></i>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item text-end" href="#"><i class="fa-solid fa-bell"></i> الاشعارات</a></li>
-            <li><a class="dropdown-item text-end" href="#"><i class="fa-solid fa-list-check"></i> الطلبات</a></li>
-            <li><a class="dropdown-item text-end" href="#"><i class="fa-solid fa-credit-card"></i> طلبات بانتظار
-                الدفع</a></li>
-            <li><a class="dropdown-item text-end" href="#"><i class="fa-solid fa-heart"></i> المفضلة</a></li>
-            <li><a class="dropdown-item text-end" href="#"><i class="fa-solid fa-user"></i> حسابي</a></li>
-            <li><a class="dropdown-item text-end" href="#"><i class="fa-solid fa-sign-out"></i> تسجيل الخروج</a></li>
-          </ul>
         </div>
         <div class="icon ps-3 pe-3 d-none d-lg-block">
           <i class="fa-solid fa-cart-shopping"></i>

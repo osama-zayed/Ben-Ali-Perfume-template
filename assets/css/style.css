@@ -10,17 +10,18 @@ a {
   user-select: none;
   cursor: default;
   text-decoration: none;
-  color: inherit;
   transition: 0.4s;
   color: #6c757d;
 }
 
 a:hover {
   color: var(--dark-color);
+  background-color: var(--gray-color);
 }
+
 .btn:focus {
-  outline: none; 
-  box-shadow: none; 
+  outline: none;
+  box-shadow: none;
 }
 
 body {
@@ -54,6 +55,7 @@ body {
 /* Start Navbar */
 .navbar {
   background-color: var(--section-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .navbar .navbar-brand img {
@@ -75,6 +77,11 @@ body {
   transition: 0.2s;
 }
 
+.navbar .icon img {
+  height: 40px;
+  width: fit-content;
+}
+
 .navbar .icon:hover svg {
   color: var(--dark-color);
 }
@@ -82,7 +89,10 @@ body {
 .navbar .navbar-toggler {
   color: var(--dark-color);
   font-size: 25px;
-  border-color: var(--section-color);
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .navbar .navbar-toggler:focus {
@@ -91,6 +101,27 @@ body {
 
 .navbar .navbar-toggler[aria-expanded="true"] {
   border-color: var(--dark-color);
+}
+
+.navbar .dropdown-item:hover {
+  background-color: var(--gray-color);
+}
+
+.navbar .dropdown-menu {
+  width: 230px;
+}
+
+.navbar .dropdown-menu .dropdown-item,
+.navbar .dropdown-menu .dropdown-item svg ,
+.navbar .icon svg
+{
+  color: #6c757d;
+  transition: 0.5s;
+}
+
+.navbar .dropdown-item:focus,
+.navbar .dropdown-item:focus svg {
+  color: var(--dark-color);
 }
 
 marquee {
@@ -137,12 +168,14 @@ marquee {
 .comment-container .user-info svg {
   color: #fbbf24;
 }
+
 /* End Comments */
 /* Start Product Section */
 .product-section {
   padding: 50px 0;
 }
-.product-section a{
+
+.product-section a {
   cursor: pointer
 }
 
@@ -194,6 +227,7 @@ marquee {
   z-index: 20;
   transition: 0.5s;
 }
+
 .btn-group .btn:focus {
   border: #ff0000;
 }
@@ -284,9 +318,10 @@ marquee {
 /* End search*/
 
 /* Start Trademarks-section */
-.trademarks-section{
-background-color: var(--gray-color);
+.trademarks-section {
+  background-color: var(--gray-color);
 }
+
 /* End Trademarks-section*/
 
 /* Start Footer */
