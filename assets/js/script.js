@@ -1,23 +1,23 @@
 function openSearchModal() {
-    document.getElementById("searchModal").style.display = "block";
-  }
+  document.getElementById("searchModal").style.display = "block";
+}
 
-  window.onclick = function (event) {
-    if (event.target == document.getElementById("searchModal")) {
-      document.getElementById("searchModal").style.display = "none";
-    }
+window.onclick = function (event) {
+  if (event.target == document.getElementById("searchModal")) {
+    document.getElementById("searchModal").style.display = "none";
   }
-  // Carousel with "flickity" library
-  const carousel = document.querySelector(".carousel");
-  if (carousel) {
-    const flkty = new Flickity(carousel, {
-      contain: true,
-      wrapAround: true,
-      pageDots: false,
-      prevNextButtons: false,
-      autoPlay: 5000, // Lecture automatique toutes les 5 secondes
-      draggable: true, // Activation du déplacement manuel
-    });
+}
+// Carousel with "flickity" library
+const carousel = document.querySelector(".carousel");
+if (carousel) {
+  const flkty = new Flickity(carousel, {
+    contain: true,
+    wrapAround: true,
+    pageDots: false,
+    prevNextButtons: false,
+    autoPlay: 5000, // Lecture automatique toutes les 5 secondes
+    draggable: true, // Activation du déplacement manuel
+  });
 
     // Pause lors du survol
     carousel.addEventListener("mouseenter", () => {
@@ -54,19 +54,19 @@ function openSearchModal() {
     button.style.display = "none";
   });
   // إظهار الزر عند التمرير لأسفل الصفحة
-window.onscroll = function () {
-var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-  scrollToTopBtn.classList.add("show");
-} else {
-  scrollToTopBtn.classList.remove("show");
-}
-};
+  window.onscroll = function () {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollToTopBtn.classList.add("show");
+    } else {
+      scrollToTopBtn.classList.remove("show");
+    }
+  };
 
-// التمرير إلى أعلى الصفحة عند الضغط على الزر
-document.getElementById("scrollToTopBtn").onclick = function () {
-window.scrollTo({
-  top: 0,
-  behavior: "smooth" // تأثير تمرير سلس
-});
-};
+  // التمرير إلى أعلى الصفحة عند الضغط على الزر
+  document.getElementById("scrollToTopBtn").onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // تأثير تمرير سلس
+    });
+  };

@@ -139,9 +139,56 @@
     </div>
   </section>
   <!-- Breadcrumb End -->
-<!-- Shop Detail Start -->
- 
- <!-- Shop Detail End -->
+  <!-- Shop Detail Start -->
+  <section class="pd-product-detail my-5">
+    <div class="container">
+      <div class="row">
+        <!-- Image Slider -->
+        <div class="col-md-6 main-carousel " id="pd-productCarousel" class=" slide" data-bs-ride="carousel">
+          <div class="carousel-item active">
+            <img src="assets/imgs/product-01.webp" class="d-block w-100" alt="Product Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imgs/product-01.webp" class="d-block w-100" alt="Product Image 2">
+          </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-md-6">
+          <div class="d-flex align-items-center justify-content-end">
+            <button class="btn text-end mb-3"><i class="fa-solid fa-share-nodes"></i></button>
+            <button class="btn text-danger text-end mb-3"><i class="fa fa-heart"></i></button>
+          </div>
+          <h2 class="pd-product-name">عود ملكي</h2>
+          <div class="pd-product-rating mt-3 mb-3">
+            <span class="text-warning">
+              <!-- Use Font Awesome for stars -->
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-alt"></i>
+            </span>
+            <span class="pd-product-model ms-2">(5 تقييمات)</span>
+          </div>
+          <h2 class="pd-product-price mb-3">7000 ريال</h2>
+          <p class="pd-product-model mb-3">السعر شامل الضريبة</p>
+          <p class="pd-product-model mb-3">رقم الموديل: 12345</p>
+
+          <div class="d-flex align-items-center mb-4">
+            <label for="pd-quantity" class="me-2">الكمية:</label>
+            <input type="number" id="pd-quantity" name="quantity" class="form-control w-25 text-center" value="1"
+              min="1">
+          </div>
+          <button class="btn main-btn ">
+            <i class="fa fa-shopping-cart me-2"></i> اضافة الى السلة
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Detail End -->
   <!-- Products Start -->
   <section class="product-section text-center">
     <div class="container">
