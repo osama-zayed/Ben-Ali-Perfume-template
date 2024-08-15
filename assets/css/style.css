@@ -275,8 +275,6 @@ marquee {
   border: #ff0000;
 }
 
-
-
 .btn-group .btn svg {
   padding: 10px;
   border: 1px solid var(--dark-color);
@@ -287,11 +285,95 @@ marquee {
   color: red;
   border: 1px solid red;
 }
+/* Start product-details Section */
 .product-model {
   font-size: 16px;
   color: #6c757d;
 }
-/* End Product Section */
+.payment-option {
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+}
+
+.option-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.availability-status {
+  color: green;
+  font-weight: bold;
+}
+
+.availability-status i {
+  margin-left: 5px;
+}
+
+.payment-method {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.method-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.method-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.method-item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.method-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.method-item a:hover {
+  text-decoration: underline;
+}
+
+.product-details-reviews-section .nav-tabs {
+  border-bottom: 2px solid #ddd;
+}
+
+.product-details-reviews-section .nav-link {
+  border: none;
+  font-weight: 600;
+  color: #555;
+}
+
+.product-details-reviews-section .nav-link.active {
+  border-bottom: 2px solid #000;
+  color: #000;
+}
+
+
+.tab-content .p-4 {
+  /* background-color: #f9f9f9; */
+  /* border: 1px solid #ddd; */
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+.review-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+/* End product-details */
+
 /* Start Card*/
 .Card img {
   min-height: 35vh;
@@ -305,6 +387,7 @@ marquee {
 }
 
 /* End Card*/
+
 
 /* Start search */
 .search-modal {

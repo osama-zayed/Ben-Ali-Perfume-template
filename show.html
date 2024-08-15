@@ -59,7 +59,7 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="icon ps-3 pe-3 d-lg-none">
-          <i class="fa-solid fa-cart-productping"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
         </div>
       </div>
 
@@ -106,7 +106,7 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="icon ps-3 pe-3 d-none d-lg-block">
-          <i class="fa-solid fa-cart-productping"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
         </div>
       </div>
     </div>
@@ -167,8 +167,8 @@
             <button class="btn text-end mb-3"><i class="fa-solid fa-share-nodes"></i></button>
             <button class="btn text-danger text-end mb-3"><i class="fa fa-heart"></i></button>
           </div>
-          <h2 class="pd-product-name mb-4">عود ملكي</h2>
-          <!-- <div class="pd-product-rating mt-3 mb-3">
+          <h2 class="pd-product-name">عود ملكي</h2>
+          <div class="pd-product-rating mt-2 mb-3">
             <span class="text-warning">
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
@@ -176,36 +176,198 @@
               <i class="fa fa-star"></i>
               <i class="fa fa-star-half-alt"></i>
             </span>
-            <span class="pd-product-model ms-2">(5 تقييمات)</span>
-          </div> -->
-          <p class="product-model  mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestias
-            nulla culpa laboriosam repellat deserunt, magnam recusandae, omnis, harum porro sint quibusdam magni sunt
-            voluptatem dignissimos fuga blanditiis velit quas!</p>
-          <h2 class="product-price mb-3">السعر : 7000 ريال</h2>
-          <!-- <p class="product-model mb-3">السعر شامل الضريبة</p> -->
-          <p class=" mb-3">رقم الموديل : <span class="product-model">123456</span></p>
+            <span class="product-model ms-2">(5 تقييمات)</span>
+          </div>
+          <h2 class="product-price mb-1 text-end">7000 ريال</h2>
+          <p class="product-model mb-2 small">السعر شامل الضريبة</p>
+          <!-- ///// -->
+          <div class="payment-option">
+            <div class="option-header">
+              <span class="availability-status">
+                <i class="fa fa-check-circle"></i> متوفر
+              </span>
+            </div>
 
-          <div class="d-flex align-items-center mb-4 pt-3">
-            <div class="input-group quantity mr-3" style="width: 200px; height: 40px;">
-              <div class="input-group-btn">
-                <button class="btn border btn-minus main-btn" >
+            <div class="payment-method mb-4">
+              <div class="method-item">
+                <img src="assets/imgs/tech-1.png" alt="Tamara Logo" class="method-logo ms-2">
+                <p>
+                  أو قسّم فاتورتك بقيمة
+                  <strong>5000 ريال</strong>
+                  على 4 دفعات بدون رسوم تأخير، متوافقة مع الشريعة الإسلامية
+                  <!-- <a href="#" >أعرف أكثر</a> -->
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ///// -->
+          <div class="product-details">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <p class="text-end"><strong>رقم الموديل:</strong></p>
+              <span class="product-model">6287020282171</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <p class="text-end"><strong>السعر:</strong></p>
+              <div class="d-flex align-items-center me-3">
+                <h2 class="product-price mb-1 ">14000 ريال</h2>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <p class="text-end"><strong>الكمية:</strong>
+              </p>
+              <div class="d-flex align-items-center me-3">
+                <button class="btn border btn-minus" type="button" style="height: 38px;">
                   <i class="fa fa-minus"></i>
                 </button>
-              </div>
-              <input type="text" class="form-control border ps-2 px-2 text-center" value="1" readonly>
-              <div class="input-group-btn">
-                <button class="btn btn-plus border ms-4 main-btn">
+                <input type="text" class="form-control text-center mx-1" value="2" readonly
+                  style="width: 50px; height: 38px;">
+                <button class="btn border btn-plus" type="button" style="height: 38px;">
                   <i class="fa fa-plus"></i>
                 </button>
               </div>
             </div>
-            <button class="btn main-btn px-3"><i class="fa-solid fa-cart-shopping"></i>
-              اضافة الى السلة</button>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <button class="btn btn-dark ms-2 flex-fill" style="height: 38px;">إضافة للسلة
+                <i class="fa-solid fa-shopping-cart flex-fill"></i>
+              </button>
+              <button class="btn btn-outline-dark flex-fill" style="height: 38px;">اشتري الآن <i
+                  class="fa-solid fa-wallet flex-fill"></i></button>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="product-details-reviews-section my-5">
+    <div class="container">
+      <div class="row">
+        <!-- Navigation Tabs -->
+        <div class="col-12">
+          <ul class="nav nav-tabs" id="productTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="details-tab" data-bs-toggle="tab" data-bs-target="#details"
+                type="button" role="tab" aria-controls="details" aria-selected="true">
+                تفاصيل المنتج
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button"
+                role="tab" aria-controls="reviews" aria-selected="false">
+                تقييمات المنتج
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="productTabContent">
+          <!-- تفاصيل المنتج -->
+          <div class="tab-pane fade show active" id="details" role="tabpanel" aria-labelledby="details-tab">
+            <div class="p-4">
+              <h5>تفاصيل المنتج:</h5>
+              <p>وصف المنتج هنا...</p>
+              <h6>النوتة العطرية:</h6>
+              <ul>
+                <li>مقدمة العطر: الياسمين، القهوة</li>
+                <li>قلب العطر: الورد، اليانسون</li>
+                <li>قاعدة العطر: الفانيلا، خشب الأرز</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- تقييمات المنتج -->
+          <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+            <div class="p-4">
+              <h5>عدد التقييمات (21)</h5>
+
+              <!-- صندوق إدخال تعليق -->
+              <div class="mb-4">
+                <textarea class="form-control" rows="4" placeholder="شاركنـا سؤالك أو تعليقك 😊"></textarea>
+                <button class="btn btn-dark mt-2">إرسال</button>
+              </div>
+
+              <div class="review-item mb-3">
+                <div class="d-flex align-items-start">
+                  <img src="assets/imgs/user.png" alt="User" class="mx-2" width="50">
+                  <div class="flex-fill">
+                    <div class="d-flex align-items-center justify-content-center">
+                      <div class="d-flex gap-3 align-items-start justify-content-start flex-fill">
+                        <h6 class="">اسامة زايد</h6>
+                        <span class="text-muted small">قام بالشراء، تم التقييم
+                          <i class="fas fa-check-circle text-warning ms-2"></i>
+                        </span>
+                      </div>
+                      <span class="text-muted small">منذ شهرين</span>
+                    </div>
+                    <div class="text-warning mb-1 ">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p>بطل بطل</p>
+                  </div>
+                </div>
+              </div>
+              <div class="review-item mb-3">
+                <div class="d-flex align-items-start">
+                  <img src="assets/imgs/user.png" alt="User" class="mx-2" width="50">
+                  <div class="flex-fill">
+                    <div class="d-flex align-items-center justify-content-center">
+                      <div class="d-flex gap-3 align-items-start justify-content-start flex-fill">
+                        <h6 class="">اسامة زايد</h6>
+                        <span class="text-muted small">قام بالشراء، تم التقييم
+                          <i class="fas fa-check-circle text-warning ms-2"></i>
+                        </span>
+                      </div>
+                      <span class="text-muted small">منذ شهرين</span>
+                    </div>
+                    <div class="text-warning mb-1 ">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p>بطل بطل</p>
+                  </div>
+                </div>
+              </div>
+              <div class="review-item mb-3">
+                <div class="d-flex align-items-start">
+                  <img src="assets/imgs/user.png" alt="User" class="mx-2" width="50">
+                  <div class="flex-fill">
+                    <div class="d-flex align-items-center justify-content-center">
+                      <div class="d-flex gap-3 align-items-start justify-content-start flex-fill">
+                        <h6 class="">اسامة زايد</h6>
+                        <span class="text-muted small">قام بالشراء، تم التقييم
+                          <i class="fas fa-check-circle text-warning ms-2"></i>
+                        </span>
+                      </div>
+                      <span class="text-muted small">منذ شهرين</span>
+                    </div>
+                    <div class="text-warning mb-1 ">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p>بطل بطل</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- product Detail End -->
   <!-- Products Start -->
