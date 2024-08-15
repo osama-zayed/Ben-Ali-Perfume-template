@@ -513,6 +513,7 @@ marquee {
   font-weight: bold;
   color: var(--dark-color);
 }
+
 .profile-items-section .nav-tabs {
   border-bottom: 2px solid #e5e7eb;
 }
@@ -527,8 +528,33 @@ marquee {
   border-bottom: 2px solid var(--dark-color);
   color: var(--dark-color);
 }
+
 .profile-items-section .nav-link:focus {
   color: var(--dark-color);
+}
+
+.profile-wishlist-section .product-card img {
+  height: 100px;
+}
+
+.profile-wishlist-section .product-card .btn-group .btn-heart svg {
+  color: red;
+  border: 1px solid red;
+}
+
+.profile-wishlist-section .product-card .btn-group .btn-heart:hover svg {
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+}
+
+.profile-pending-orders-section .pending-orders {
+  min-height: 50vh;
+}
+
+.profile-item-empty svg{
+  font-size: 50px;
+  color:#d1d5db;
+  background-color:#f3f4f6;
 }
 
 /* End profile*/
