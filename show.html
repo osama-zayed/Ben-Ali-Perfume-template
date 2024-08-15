@@ -175,14 +175,23 @@
           <p class="pd-product-model mb-3">السعر شامل الضريبة</p>
           <p class="pd-product-model mb-3">رقم الموديل: 12345</p>
 
-          <div class="d-flex align-items-center mb-4">
-            <label for="pd-quantity" class="me-2">الكمية:</label>
-            <input type="number" id="pd-quantity" name="quantity" class="form-control w-25 text-center" value="1"
-              min="1">
+          <div class="d-flex align-items-center mb-4 pt-2">
+            <div class="input-group quantity mr-3" style="width: 200px;">
+              <div class="input-group-btn">
+                <button class="btn border btn-minus">
+                  <i class="fa fa-minus"></i>
+                </button>
+              </div>
+              <input type="text" class="form-control border ps-2 px-2 text-center" value="1">
+              <div class="input-group-btn">
+                <button class="btn btn-plus border ms-4">
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            <button class="btn main-btn px-3"><i class="fa fa-shopping-cart mr-1"></i> 
+              اضافة الى السلة</button>
           </div>
-          <button class="btn main-btn ">
-            <i class="fa fa-shopping-cart me-2"></i> اضافة الى السلة
-          </button>
         </div>
       </div>
     </div>
@@ -497,64 +506,8 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/all.min.js"></script>
   <script src="assets/js/flickity.pkgd.min.js"></script>
+  <script src="assets/js/script.js"></script>
 
-  <script>
-    function openSearchModal() {
-      document.getElementById("searchModal").style.display = "block";
-    }
-
-    window.onclick = function (event) {
-      if (event.target == document.getElementById("searchModal")) {
-        document.getElementById("searchModal").style.display = "none";
-      }
-    }
-    // Carousel with "flickity" library
-    const carousel = document.querySelector(".carousel");
-    if (carousel) {
-      const flkty = new Flickity(carousel, {
-        contain: true,
-        wrapAround: true,
-        pageDots: false,
-        prevNextButtons: false,
-        autoPlay: 5000, // Lecture automatique toutes les 5 secondes
-        draggable: true, // Activation du déplacement manuel
-      });
-
-      // Pause lors du survol
-      carousel.addEventListener("mouseenter", () => {
-        flkty.stopPlayer();
-      });
-      carousel.addEventListener("mouseleave", () => {
-        flkty.playPlayer();
-      });
-    }
-
-    const mainCarousel = document.querySelector(".main-carousel");
-    if (mainCarousel) {
-      const flkty = new Flickity(mainCarousel, {
-        contain: true,
-        wrapAround: true,
-        pageDots: false,
-        draggable: false,
-        prevNextButtons: false,
-        autoPlay: 5000, // Lecture automatique toutes les 5 secondes
-      });
-
-      // Pause lors du survol
-      mainCarousel.addEventListener("mouseenter", () => {
-        flkty.stopPlayer();
-      });
-      mainCarousel.addEventListener("mouseleave", () => {
-        flkty.playPlayer();
-      });
-    }
-
-    // Hide navigation icons
-    const flickityPrevNextButtons = document.querySelectorAll(".flickity-button");
-    flickityPrevNextButtons.forEach(button => {
-      button.style.display = "none";
-    });
-  </script>
 </body>
 
 </html>
