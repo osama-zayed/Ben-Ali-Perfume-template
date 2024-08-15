@@ -36,7 +36,13 @@ body {
   background-color: var(--dark-color);
   transition: 0.5s;
 }
-
+.form-control{
+  border-radius: 0;
+}
+.form-control:focus{
+ box-shadow: none;
+ border: var(--dark-color) solid 1px; 
+}
 .main-btn:hover {
   color: var(--dark-color);
   background-color: var(--gray-color);
@@ -561,6 +567,11 @@ marquee {
 
 /* Start Footer */
 
+/* Start cart */
+.cart-section .card .cart-content{
+  border-bottom: var(--gray-color) 1px solid;
+}
+/* End cart*/
 .footer .copyright>span {
   color: var(--dark-color);
 }
