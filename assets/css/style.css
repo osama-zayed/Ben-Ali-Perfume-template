@@ -24,6 +24,7 @@ a:hover {
   box-shadow: none;
 }
 
+
 body {
   font-family: "Roboto", sans-serif;
   direction: rtl;
@@ -467,7 +468,7 @@ marquee {
   align-items: flex-end;
   background-color: #f8f9fa;
   overflow: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   overflow: visible;
 }
 
@@ -478,7 +479,6 @@ marquee {
   width: 100%;
   height: 100%;
   background-image: url('../imgs/pattern-image.png');
-  /* استبدلها بالصورة الخاصة بالنمط */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -513,7 +513,23 @@ marquee {
   font-weight: bold;
   color: var(--dark-color);
 }
+.profile-items-section .nav-tabs {
+  border-bottom: 2px solid #e5e7eb;
+}
 
+.profile-items-section .nav-link {
+  border: none;
+  font-weight: 600;
+  color: #6f7580;
+}
+
+.profile-items-section .nav-link.active {
+  border-bottom: 2px solid var(--dark-color);
+  color: var(--dark-color);
+}
+.profile-items-section .nav-link:focus {
+  color: var(--dark-color);
+}
 /* End profile*/
 
 /* Start Footer */
