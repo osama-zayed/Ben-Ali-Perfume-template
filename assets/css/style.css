@@ -58,8 +58,13 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
+.navbar .navbar-brand {
+  margin-right:0
+
+}
 .navbar .navbar-brand img {
   width: 150px;
+
 }
 
 .navbar .navbar-nav .nav-link {
@@ -123,13 +128,20 @@ body {
 .navbar .dropdown-item:focus svg {
   color: var(--dark-color);
 }
+/* End Navbar */
 
 marquee {
   color: var(--section-color);
   background-color: var(--dark-color);
   z-index: 10;
 }
-/* End Navbar */
+.breadcrum-item + .breadcrum-item::before {
+  content: " > "; 
+  color: #6c757d;
+  padding: 0 7px; 
+  font-size: 15px;
+}
+
 /* Start scroll-to-top */
 .scroll-to-top {
   position: fixed;
