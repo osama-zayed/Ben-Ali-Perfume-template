@@ -287,6 +287,10 @@ marquee {
   color: red;
   border: 1px solid red;
 }
+.product-model {
+  font-size: 16px;
+  color: #6c757d;
+}
 /* End Product Section */
 /* Start Card*/
 .Card img {

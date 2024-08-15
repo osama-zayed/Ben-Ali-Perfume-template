@@ -34,9 +34,9 @@ if (carousel) {
       contain: true,
       wrapAround: true,
       pageDots: false,
-      draggable: false,
       prevNextButtons: false,
-      autoPlay: 5000, // Lecture automatique toutes les 5 secondes
+      autoPlay: 2000, // Lecture automatique toutes les 5 secondes
+      draggable: true, // Activation du déplacement manuel
     });
 
     // Pause lors du survol
