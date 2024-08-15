@@ -38,7 +38,6 @@ body {
 }
 .form-control{
   border-radius: 0;
-  height: 100%;
 }
 .form-control:focus{
  box-shadow: none;
