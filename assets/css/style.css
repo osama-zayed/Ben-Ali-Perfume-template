@@ -1,6 +1,8 @@
 :root {
-  --dark-color: #040404;
+  --dark-color: #333;
   --gray-color: #f1f1f1;
+  --gray2-color: #6c757d;
+  --yellow-color: #bf9861;
   --section-color: #fff;
 }
 
@@ -11,12 +13,12 @@ a {
   cursor: default;
   text-decoration: none;
   transition: 0.4s;
-  color: #6c757d;
+  color: var(--gray2-color);
 }
 
 a:hover {
-  color: var(--dark-color);
-  background-color: var(--gray-color);
+  color: var(--yellow-color);
+  background-color: transparent;
 }
 
 .btn:focus {
@@ -36,13 +38,16 @@ body {
   background-color: var(--dark-color);
   transition: 0.5s;
 }
-.form-control{
+
+.form-control {
   border-radius: 0;
 }
-.form-control:focus{
- box-shadow: none;
- border: var(--dark-color) solid 1px; 
+
+.form-control:focus {
+  box-shadow: none;
+  border: var(--dark-color) solid 1px;
 }
+
 .main-btn:hover {
   color: var(--dark-color);
   background-color: var(--gray-color);
@@ -66,22 +71,49 @@ body {
 }
 
 .navbar .navbar-brand {
-  margin-right: 0
+  text-align: center;
+  width: 150px;
 }
 
-.navbar .navbar-brand img {
-  width: 150px;
+@media (max-width: 769px) {
+  .navbar .navbar-brand {
+    margin-right: 10px;
+  }
+}
 
+.navbar .navbar-brand:hover {
+  background-color: transparent;
+}
+
+.navbar .navbar-brand p,
+.navbar .navbar-brand span {
+  color: var(--yellow-color);
+  transition: 0.7s;
+  margin: 0;
+  width: 150px;
+  text-align: center;
+}
+
+.navbar .navbar-brand:hover p,
+.navbar .navbar-brand:hover span {
+  color: var(--dark-color);
+}
+
+.navbar .navbar-brand span {
+  font-size: small;
+  letter-spacing: -0.07em;
 }
 
 .navbar .navbar-nav .nav-link {
   color: var(--dark-color);
+  transition: 0.5s;
 }
 
-.navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav .nav-link:hover {
-  color: var(--dark-color);
+  color: var(--yellow-color);
+  background-color: transparent;
+
 }
 
 .navbar .icon svg {
@@ -117,6 +149,7 @@ body {
 
 .navbar .dropdown-item:hover {
   background-color: var(--gray-color);
+  color: var(--yellow-color);
 }
 
 .navbar .dropdown-menu {
@@ -126,13 +159,13 @@ body {
 .navbar .dropdown-menu .dropdown-item,
 .navbar .dropdown-menu .dropdown-item svg,
 .navbar .icon svg {
-  color: #6c757d;
+  color: var(--gray2-color);
   transition: 0.5s;
 }
 
 .navbar .dropdown-item:focus,
 .navbar .dropdown-item:focus svg {
-  color: var(--dark-color);
+  color: var(--yellow-color);
 }
 
 /* End Navbar */
@@ -145,7 +178,7 @@ marquee {
 
 .breadcrum-item+.breadcrum-item::before {
   content: " > ";
-  color: #6c757d;
+  color: var(--gray2-color);
   padding: 0 7px;
   font-size: 15px;
 }
@@ -298,7 +331,7 @@ marquee {
 /* Start product-details Section */
 .product-model {
   font-size: 16px;
-  color: #6c757d;
+  color: var(--gray2-color);
 }
 
 .payment-option {
@@ -444,7 +477,7 @@ marquee {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: #6c757d;
+  color: var(--gray2-color);
   background-color: transparent;
   border: none;
 }
@@ -472,7 +505,7 @@ marquee {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  background-color: #f8f9fa;
+  background-color: var(--gray-color);
   overflow: hidden;
   margin-bottom: 70px;
   overflow: visible;
@@ -527,7 +560,7 @@ marquee {
 .profile-items-section .nav-link {
   border: none;
   font-weight: 600;
-  color: #6f7580;
+  color: var(--gray2-color);
 }
 
 .profile-items-section .nav-link.active {
@@ -536,7 +569,7 @@ marquee {
 }
 
 .profile-items-section .nav-link:focus {
-  color: var(--dark-color);
+  color: var(--yellow-color);
 }
 
 .profile-wishlist-section .product-card img {
@@ -557,10 +590,10 @@ marquee {
   min-height: 50vh;
 }
 
-.profile-item-empty svg{
+.profile-item-empty svg {
   font-size: 50px;
-  color:#d1d5db;
-  background-color:#f3f4f6;
+  color: #d1d5db;
+  background-color: var(--gray-color);
 }
 
 /* End profile*/
@@ -568,16 +601,26 @@ marquee {
 /* Start Footer */
 
 /* Start cart */
-.cart-section .card .cart-content{
+.cart-section .card .cart-content {
   border-bottom: var(--gray-color) 1px solid;
 }
+
 /* End cart*/
+.footer .info img{
+  width: 200px;
+}
 .footer .copyright>span {
   color: var(--dark-color);
 }
 
 .footer .copyright div span {
   color: var(--dark-color);
+}
+
+.footer .contact ul a,
+.footer .links ul a{
+font-size: 15px;
+font-weight: 400;
 }
 
 .footer .contact ul svg {
