@@ -73,6 +73,7 @@ body {
 .navbar .navbar-brand {
   text-align: center;
   width: 150px;
+  margin: 0;
 }
 
 @media (max-width: 769px) {
@@ -99,9 +100,12 @@ body {
   color: var(--dark-color);
 }
 
+.navbar .navbar-brand p {
+  font-size: medium;
+}
 .navbar .navbar-brand span {
   font-size: small;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.06em;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -175,12 +179,18 @@ marquee {
   background-color: var(--dark-color);
   z-index: 10;
 }
+marquee:focus {
+  color: var(--yellow-color);
+}
 
 .breadcrum-item+.breadcrum-item::before {
   content: " > ";
   color: var(--gray2-color);
   padding: 0 7px;
   font-size: 15px;
+}
+.breadcrumb .text-dark:focus {
+color: var(--yellow-color);
 }
 
 /* Start scroll-to-top */
