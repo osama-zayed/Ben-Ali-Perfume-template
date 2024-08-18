@@ -98,6 +98,8 @@ ul {
   text-align: center;
   width: 150px;
   margin: 0;
+  margin-left: 20px;
+  letter-spacing: 0;
 }
 
 @media (max-width: 769px) {
