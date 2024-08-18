@@ -44,9 +44,10 @@ a:hover {
   background-color: transparent;
 }
 
-ul{
+ul {
   padding: 0;
 }
+
 .btn:focus {
   outline: none;
   box-shadow: none;
@@ -285,12 +286,19 @@ marquee:focus {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-15px);
   }
+
   60% {
     transform: translateY(-7px);
   }
@@ -404,9 +412,18 @@ marquee:focus {
   transition: 0.5s;
 }
 
-.btn-group .btn-heart:hover svg {
+.btn-heart svg {
+  transition: 0.5s;
+}
+
+.btn-heart:hover svg {
   color: red;
-  border: 1px solid red;
+}
+
+.btn-group .btn-heart:hover svg {
+  background-color: red;
+  color: var(--gray-color);
+  border: 0.5px solid var(--section-color);
 }
 
 /* Start product-details Section */
@@ -461,6 +478,9 @@ marquee:focus {
   font-size: 14px;
 }
 
+.product-details .btn {
+  height: 38px;
+}
 
 .product-details-reviews-section .nav-tabs {
   border-bottom: 2px solid var(--gray-color);
@@ -649,16 +669,6 @@ marquee:focus {
   height: 100px;
 }
 
-.profile-wishlist-section .product-card .btn-group .btn-heart svg {
-  color: red;
-  border: 1px solid red;
-}
-
-.profile-wishlist-section .product-card .btn-group .btn-heart:hover svg {
-  color: var(--dark-color);
-  border: 1px solid var(--dark-color);
-}
-
 .profile-pending-orders-section .pending-orders {
   min-height: 50vh;
 }
@@ -677,6 +687,30 @@ marquee:focus {
 .cart-section .card .cart-content {
   border-bottom: var(--gray-color) 1px solid;
 }
+
+.cart-section .method-logo {
+  width: 100px;
+}
+
+.cart-section .card .cart-content {
+  border-bottom: var(--gray-color) 1px solid;
+}
+
+.btn-group .times svg {
+  color: var(--section-color);
+  background-color: red;
+  border: 1px solid var(--section-color);
+}
+
+.btn-group .times:hover svg {
+  color: var(--dark-color);
+}
+
+/* @media (max-width: 768px) {
+ .cart-section .cart-product{
+  display: block;
+ }
+} */
 /* End cart*/
 /* Start Important Links */
 
@@ -684,6 +718,7 @@ marquee:focus {
 .footer .info img {
   width: 200px;
 }
+
 .footer .links-title {
   color: var(--dark-color);
 }

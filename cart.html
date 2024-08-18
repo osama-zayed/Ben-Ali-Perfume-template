@@ -78,7 +78,7 @@
         </div>
         <div class="icon ps-3 pe-3 d-lg-none">
           <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i>
-           <span class="number-cart">3</span>
+            <span class="number-cart">3</span>
           </a>
         </div>
       </div>
@@ -159,7 +159,7 @@
         <div class="col-12">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-30">
-              <li class="breadcrum-item"><a href="#" >الرئيسية</a></li>
+              <li class="breadcrum-item"><a href="#">الرئيسية</a></li>
               <li class="breadcrum-item active" aria-current="page">سلة المشتريات</li>
             </ol>
           </nav>
@@ -173,13 +173,13 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-12 mb-3 px-2">
-          <div class="d-flex align-items-center border mb-2 ">
+          <div class="d-flex align-items-center cart-product border mb-2 ">
             <img src="assets/imgs/product-01.webp" alt="Tamara Logo" class="method-logo ms-2">
             <div class="product-info flex-fill">
               <h3 class="product-name">عود ملكي</h3>
               <p class="product-price">7000 ريال</p>
             </div>
-            <div class="d-flex align-items-center me-3">
+            <div class="d-flex align-items-center  me-3">
               <button class="btn border btn-minus" type="button" style="height: 38px;">
                 <i class="fa fa-minus"></i>
               </button>
@@ -190,73 +190,32 @@
               </button>
             </div>
             <div class="btn-group">
-              <button class="btn color-gray" title="حذف من السلة">
-                <i class="fas fa-times text-danger rounded-circle w-50"></i>
+              <button class="btn times color-gray" title="حذف من السلة">
+                <i class="fas fa-times rounded-circle w-50"></i>
               </button>
             </div>
           </div>
-          <div class="d-flex align-items-center border mb-2 ">
-            <img src="assets/imgs/product-01.webp" alt="Tamara Logo" class="method-logo ms-2">
-            <div class="product-info flex-fill">
-              <h3 class="product-name">عود ملكي</h3>
-              <p class="product-price">7000 ريال</p>
-            </div>
-            <div class="d-flex align-items-center me-3">
-              <button class="btn border btn-minus" type="button" style="height: 38px;">
-                <i class="fa fa-minus"></i>
-              </button>
-              <input type="text" class="form-control text-center mx-1" value="2" readonly
-                style="width: 50px; height: 38px;">
-              <button class="btn border btn-plus" type="button" style="height: 38px;">
-                <i class="fa fa-plus"></i>
-              </button>
-            </div>
-            <div class="btn-group">
-              <button class="btn color-gray" title="حذف من السلة">
-                <i class="fas fa-times text-danger rounded-circle w-50"></i>
-              </button>
-            </div>
-          </div>
-          <div class="d-flex align-items-center border mb-2 ">
-            <img src="assets/imgs/product-01.webp" alt="Tamara Logo" class="method-logo ms-2">
-            <div class="product-info flex-fill">
-              <h3 class="product-name">عود ملكي</h3>
-              <p class="product-price">7000 ريال</p>
-            </div>
-            <div class="d-flex align-items-center me-3">
-              <button class="btn border btn-minus" type="button" style="height: 38px;">
-                <i class="fa fa-minus"></i>
-              </button>
-              <input type="text" class="form-control text-center mx-1" value="2" readonly
-                style="width: 50px; height: 38px;">
-              <button class="btn border btn-plus" type="button" style="height: 38px;">
-                <i class="fa fa-plus"></i>
-              </button>
-            </div>
-            <div class="btn-group">
-              <button class="btn color-gray" title="حذف من السلة">
-                <i class="fas fa-times text-danger rounded-circle w-50"></i>
-              </button>
-            </div>
-          </div>
+
         </div>
-        <div class="col-lg-4 col-md-12 card p-4 mb-4">
-          <h6 class="cart-title text-center">ملخص الطلب</h6>
-          <div class="d-flex cart-content pb-3 justify-content-between align-items-start mb-3">
-            <span class="product-model">مجموع المنتجات</span>
-            <strong>14000 ريال</strong>
+        <div class="col-lg-4 col-md-12   ">
+          <div class="card p-4 mb-4">
+            <h6 class="cart-title text-center">ملخص الطلب</h6>
+            <div class="d-flex cart-content pb-3 justify-content-between align-items-start mb-3">
+              <span class="product-model">مجموع المنتجات</span>
+              <strong>14000 ريال</strong>
+            </div>
+            <span class="product-model">هل لديك كود خصم</span>
+            <form class="d-flex cart-content pb-3  mb-3">
+              <input type="text" class="form-control" placeholder="قم بادخال كود الخصم">
+              <button class="main-btn ">اضافة</button>
+            </form>
+            <div class="d-flex cart-content pb-3 justify-content-between align-items-start mb-3">
+              <span class="product-model">الاجمالي</span>
+              <strong>14000 ريال</strong>
+            </div>
+            <span class="product-model mb-4">الاسعار شاملة للضريبة</span>
+            <button class="main-btn ">اتمام الطلب</button>
           </div>
-          <span class="product-model">هل لديك كود خصم</span>
-          <form class="d-flex cart-content pb-3  mb-3">
-            <input type="text" class="form-control" placeholder="قم بادخال كود الخصم">
-            <button class="main-btn ">اضافة</button>
-          </form>
-          <div class="d-flex cart-content pb-3 justify-content-between align-items-start mb-3">
-            <span class="product-model">الاجمالي</span>
-            <strong>14000 ريال</strong>
-          </div>
-          <span class="product-model mb-4">الاسعار شاملة للضريبة</span>
-          <button class="main-btn ">اتمام الطلب</button>
         </div>
       </div>
     </div>
@@ -293,9 +252,10 @@
           <div class="links">
             <h5 class="links-title">روابط مهمة</h5>
             <ul class="list-unstyled ">
-                            <li><a class="d-block pb-2" href="about_us.html">من نحن</a></li>
+              <li><a class="d-block pb-2" href="about_us.html">من نحن</a></li>
               <li><a class="d-block pb-2" href="privacy_policy.html">سياسة الخصوصية</a></li>
-              <li><a class="d-block pb-2" href="exchange_refund_and_cancellation_policy.html">معلومات الدفع والتوصيل</a></li>
+              <li><a class="d-block pb-2" href="exchange_refund_and_cancellation_policy.html">معلومات الدفع والتوصيل</a>
+              </li>
               <li><a class="d-block pb-2" href="usage_agreement.html">اتفاقية الاستخدام</a></li>
               <li><a class="d-block pb-2" href="perfumes inspired are What perfumes.html">ماهي العطور المستوحاة</a></li>
               <li><a class="d-block pb-2" href="Why choosing us.html">ليش تختارنا</a></li>
@@ -304,7 +264,8 @@
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="links">
- <h5 class="links-title">حسابي</h5>            <ul class="list-unstyled ">
+            <h5 class="links-title">حسابي</h5>
+            <ul class="list-unstyled ">
               <li> <a class="d-block pb-2" href="notifications.html">الاشعارات</a></li>
               <li> <a class="d-block pb-2" href="orders.html">الطلبات</a></li>
               <li> <a class="d-block pb-2" href="pending_orders.html">طلبات بانتظار الدفع</a></li>
@@ -319,7 +280,7 @@
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="contact">
-                       <h5 class="links-title">تواصل معنا</h5>
+            <h5 class="links-title">تواصل معنا</h5>
 
             <ul class="list-unstyled">
               <li>
