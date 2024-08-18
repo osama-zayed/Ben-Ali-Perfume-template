@@ -571,7 +571,7 @@ marquee:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../imgs/pattern-image.png');
+  background-image: url('../imgs/pattern-image.webp');
   background-size: cover;
   background-position: center;
   display: flex;
