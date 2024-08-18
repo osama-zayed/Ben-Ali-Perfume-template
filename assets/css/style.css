@@ -384,7 +384,7 @@ marquee:focus {
 
 .btn-group .btn svg {
   padding: 10px;
-  border: 1px solid var(--dark-color);
+  border: 0.5px solid var(--dark-color);
   transition: 0.5s;
 }
 
