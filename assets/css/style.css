@@ -666,6 +666,9 @@ marquee:focus {
 .footer .info img {
   width: 200px;
 }
+.footer .links-title {
+  color: var(--dark-color);
+}
 
 .footer .copyright>span {
   color: var(--dark-color);
