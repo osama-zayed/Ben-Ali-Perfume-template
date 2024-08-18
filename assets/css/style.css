@@ -656,11 +656,14 @@ marquee:focus {
   border: none;
   font-weight: 600;
   color: var(--gray2-color);
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .profile-items-section .nav-link.active {
   border-bottom: 2px solid var(--yellow-color);
   color: var(--yellow-color);
+  background-color: transparent;
+
 }
 
 .profile-items-section .nav-link:focus {
