@@ -2,6 +2,7 @@
   --dark-color: #333;
   --gray-color: #f1f1f1;
   --gray2-color: #6c757d;
+  /* --gray2-color: #908a72; */
   --yellow-color: #bf9861;
   --section-color: #fff;
 }
@@ -91,6 +92,7 @@ body {
   color: var(--yellow-color);
   transition: 0.7s;
   margin: 0;
+  padding: 0;
   width: 150px;
   text-align: center;
 }
@@ -130,8 +132,12 @@ body {
   width: fit-content;
 }
 
+.navbar .icon svg {
+  font-size: 20px;
+  font-weight: 100;
+}
 .navbar .icon:hover svg {
-  color: var(--dark-color);
+  color: var(--yellow-color);
 }
 
 .navbar .navbar-toggler {
