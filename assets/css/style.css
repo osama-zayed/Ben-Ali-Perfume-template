@@ -661,8 +661,10 @@ marquee:focus {
 .cart-section .card .cart-content {
   border-bottom: var(--gray-color) 1px solid;
 }
-
 /* End cart*/
+/* Start Important Links */
+
+/* End Important Links */
 .footer .info img {
   width: 200px;
 }
@@ -682,7 +684,6 @@ marquee:focus {
   width: 20px;
   height: 20px;
 }
-
 
 .footer .facebook {
   background-color: #1877f2;
