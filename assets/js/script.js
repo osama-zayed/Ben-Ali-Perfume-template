@@ -71,16 +71,4 @@ if (carousel) {
     });
   };
 
-  const decreaseBtn = document.getElementById('decrease-btn');
-  const increaseBtn = document.getElementById('increase-btn');
-  const quantityInput = document.getElementById('pd-quantity');
-
-  decreaseBtn.addEventListener('click', () => {
-    if (quantityInput.value > 1) {
-      quantityInput.value--;
-    }
-  });
-
-  increaseBtn.addEventListener('click', () => {
-    quantityInput.value++;
-  });
+  

@@ -268,7 +268,7 @@ marquee:focus {
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
-  /* لضمان أن الزر فوق كل العناصر الأخرى */
+  animation: bounce 2s ease infinite;
 }
 
 .scroll-to-top i {
@@ -278,6 +278,22 @@ marquee:focus {
 .scroll-to-top.show {
   opacity: 100;
   visibility: visible;
+}
+
+.scroll-to-top:hover {
+  animation-play-state: paused;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
 }
 
 /* End scroll-to-top */
