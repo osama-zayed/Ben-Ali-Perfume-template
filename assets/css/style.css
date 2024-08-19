@@ -102,13 +102,6 @@ ul {
   letter-spacing: 0;
 }
 
-@media (max-width: 769px) {
-  .navbar .navbar-brand {
-    margin-right: 10px;
-    margin-left: 5px;
-    width: 120px;
-  }
-}
 
 .navbar .navbar-brand:hover {
   background-color: transparent;
@@ -228,6 +221,20 @@ ul {
 .navbar .dropdown-item:focus,
 .navbar .dropdown-item:focus svg {
   color: var(--yellow-color);
+}
+
+@media (max-width: 769px) {
+  .navbar .navbar-brand {
+    margin-right: 7px;
+    margin-left: 5px;
+    width: 120px;
+  }
+
+  .navbar .navbar-brand p,
+  .navbar .navbar-brand span {
+    width: 150px;
+  }
+
 }
 
 /* End Navbar */
