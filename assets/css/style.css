@@ -187,7 +187,8 @@ ul {
 
 .navbar .navbar-toggler {
   color: var(--dark-color);
-  font-size: 25px;
+  font-size: 24px;
+  padding: 10px;
 }
 
 .navbar .navbar-toggler:focus {
@@ -198,9 +199,6 @@ ul {
   box-shadow: none;
 }
 
-.navbar .navbar-toggler[aria-expanded="true"] {
-  border-color: var(--dark-color);
-}
 
 .navbar .dropdown-item:hover {
   background-color: var(--gray-color);
@@ -225,16 +223,16 @@ ul {
 
 @media (max-width: 769px) {
   .navbar .navbar-brand {
-    margin-right: 7px;
+    margin-right: 3px;
     margin-left: 5px;
-    width: 50px;
+    width: 40px;
   }
 
   .navbar .navbar-brand p,
   .navbar .navbar-brand span {}
 
   .navbar .collapse .icon {
-    width: 120px;
+    width: 100px;
   }
 
 }
