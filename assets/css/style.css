@@ -371,17 +371,17 @@ marquee:focus {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  transition: transform 0.8s;
+  transition: 0.8s;
 }
 
 .product-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
   opacity: 0.9;
+  transform: translateY(-3px);
 }
 
 .product-card img {
-  height: 27%;
-  object-fit: cover;
+  height: 450px;
 }
 
 .product-info {
@@ -392,6 +392,10 @@ marquee:focus {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 10px;
+  transition: 0.5s;
+}
+.product-card:hover .product-name {
+color: var(--yellow-color);
 }
 
 .product-price {
@@ -481,9 +485,10 @@ marquee:focus {
 }
 
 .method-logo {
-  width: 150px;
+  width: 80px;
   height: auto;
   margin-right: 10px;
+  height: 120px;
 }
 
 .method-item p {
@@ -716,6 +721,7 @@ marquee:focus {
 
   .profile-wishlist-section .card-product .method-logo {
     width: 100%;
+    height: 500px;
   }
 
   .profile-wishlist-section .card-product .product-info {
@@ -744,7 +750,8 @@ marquee:focus {
 }
 
 .cart-section .method-logo {
-  width: 120px;
+  width: 80px;
+  height: 120px;
 }
 
 .cart-section .card .cart-content {
@@ -785,7 +792,7 @@ marquee:focus {
   }
 
   .cart-section .card-product .method-logo {
-    width: 180px;
+    width: 100px;
     margin: 0;
     height: 140px;
   }
