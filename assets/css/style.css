@@ -513,7 +513,7 @@ marquee:focus {
   }
 
   .product-card .product-info {
-    padding: 15px;
+    padding: 5px;
   }
 
   .product-card .product-name {
@@ -527,6 +527,11 @@ marquee:focus {
   .product-card .btn-group,
   .product-card .btn-group-vertical {
     position: static !important;
+  }
+  .product-card .btn-group .btn-add-card {
+    font-size: 0.9rem;
+    width: 80%;
+    margin: 0 10px 10px 10px;
   }
 
   .product-card .btn-group .btn-heart {
@@ -809,6 +814,7 @@ marquee:focus {
   .profile-wishlist-section .card-product .btn-add-card {
     margin: 0 10px 10px 10px;
     font-size: 0.9rem;
+    width: 80%;
   }
 }
 
