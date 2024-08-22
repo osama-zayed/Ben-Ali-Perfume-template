@@ -426,7 +426,6 @@ marquee:focus {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   transition: 0.8s;
-  position: relative;
 }
 
 .product-card:hover {
@@ -465,24 +464,24 @@ marquee:focus {
 }
 
 
-.btns-group {
+.btn-group {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.btns-group .btn {
+.btn-group .btn {
   flex-grow: 1;
   margin: 0 5px;
   z-index: 20;
   transition: 0.5s;
 }
 
-.btns-group .btn:focus {
+.btn-group .btn:focus {
   border: #ff0000;
 }
 
-.btns-group .btn svg {
+.btn-group .btn svg {
   padding: 10px;
   border: 0.5px solid var(--dark-color);
   transition: 0.5s;
@@ -496,13 +495,17 @@ marquee:focus {
   color: red;
 }
 
-.btns-group .btn-heart:hover svg {
+.btn-group .btn-heart:hover svg {
   background-color: red;
   color: var(--gray-color);
   border: 0.5px solid var(--section-color);
 }
 
 @media (max-width: 576px) {
+  .product-card {
+    position: relative;
+  }
+
   .product-card img {
     max-height: 300px;
   }
@@ -519,14 +522,15 @@ marquee:focus {
     font-size: 0.9rem;
   }
 
-  .product-card .btns-group .btn {
-    margin: 5px 0;
+   .product-card .btn-group,
+   .product-card .btn-group-vertical {
+      position: static !important; 
   }
-
-  .product-card .btn-heart {
+  .product-card .btn-group .btn-heart {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 2px;
+    top: 2px;
+    z-index: 100;
   }
 }
 
@@ -754,7 +758,7 @@ marquee:focus {
 
   .profile-wishlist-section .card-product .method-logo {
     width: 100%;
-    height: 500px;
+    height: 300px;
   }
 
   .profile-wishlist-section .card-product .product-info {
@@ -762,7 +766,7 @@ marquee:focus {
     padding: 10px 0 0 0;
   }
 
-  .profile-wishlist-section .card-product .btns-group {
+  .profile-wishlist-section .card-product .btn-group {
     position: absolute;
     top: 1px;
     left: 1px;
@@ -792,7 +796,7 @@ marquee:focus {
   border-bottom: var(--gray-color) 1px solid;
 }
 
-.btns-group .times svg {
+.btn-group .times svg {
   color: var(--section-color);
   background-color: red;
   border: 1px solid var(--section-color);
@@ -800,7 +804,7 @@ marquee:focus {
 }
 
 /*  */
-.btns-group .times:hover svg {
+.btn-group .times:hover svg {
   color: var(--dark-color);
 
 }
@@ -836,14 +840,14 @@ marquee:focus {
     padding: 0;
   }
 
-  .cart-section .card-product .btns-group {
+  .cart-section .card-product .btn-group {
     position: absolute;
     top: 0;
     right: -12px;
     font-size: xx-small;
   }
 
-  .cart-section .card-product .btns-group svg {
+  .cart-section .card-product .btn-group svg {
     padding: 5px 6px;
   }
 
