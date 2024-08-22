@@ -537,10 +537,6 @@ marquee:focus {
 }
 
 /* Start product-details Section */
-.product-model {
-  font-size: 16px;
-  color: var(--gray2-color);
-}
 
 .product-details .form-control {
   background-color: var(--section-color);
@@ -549,6 +545,13 @@ marquee:focus {
   border-radius: 5px;
 
 }
+
+
+.product-model {
+  font-size: 16px;
+  color: var(--gray2-color);
+}
+
 
 .product-details .form-control:focus {
   border: #ced4da solid 1px;
