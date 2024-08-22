@@ -68,6 +68,7 @@ ul {
 
 .form-control {
   border-radius: 0;
+  background-color: var(--section-color);
 }
 
 .form-control:focus {
