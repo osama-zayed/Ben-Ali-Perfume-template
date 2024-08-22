@@ -523,10 +523,11 @@ marquee:focus {
     font-size: 0.9rem;
   }
 
-   .product-card .btn-group,
-   .product-card .btn-group-vertical {
-      position: static !important; 
+  .product-card .btn-group,
+  .product-card .btn-group-vertical {
+    position: static !important;
   }
+
   .product-card .btn-group .btn-heart {
     position: absolute;
     left: 2px;
@@ -539,6 +540,18 @@ marquee:focus {
 .product-model {
   font-size: 16px;
   color: var(--gray2-color);
+}
+
+.product-details .form-control {
+  background-color: var(--section-color);
+  width: 50px;
+  height: 38px;
+  border-radius: 5px;
+
+}
+
+.product-details .form-control:focus {
+  border: #ced4da solid 1px;
 }
 
 .payment-option {
