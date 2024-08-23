@@ -117,6 +117,7 @@ ul {
   width: 150px;
   text-align: center;
   font-weight: 600;
+
 }
 
 .navbar .navbar-brand:hover p,
@@ -189,8 +190,8 @@ ul {
 
 .navbar .navbar-toggler {
   color: var(--dark-color);
-  font-size: 24px;
-  padding: 10px;
+  font-size: 20px;
+  padding: 5px;
 }
 
 .navbar .navbar-toggler:focus {
