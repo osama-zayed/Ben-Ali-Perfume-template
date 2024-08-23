@@ -997,33 +997,32 @@ text-align: center;
   font-size: large;
 }
 
-.footer .copyright>span {
-  color: var(--dark-color);
+.footer .copyright {
+  color: var(--gray2-color);
 }
 
-.footer .copyright div span {
-  color: var(--dark-color);
+.footer .copyright span {
+  color: var(--gray-color);
 }
 
 .footer .contact ul svg {
   width: 20px;
   height: 20px;
 }
-
 .footer .facebook {
-  background-color: #1877f2;
+  background-color: #1877f2; 
 }
 
-.footer .twitter {
-  background-color: #1da1f2;
+.footer .instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
 }
 
-.footer .linkedin {
-  background-color: #0077b5;
+.footer .whatsapp {
+  background-color: #25d366; 
 }
 
-.footer .youtube {
-  background-color: #ff0000;
+.footer .website {
+  background-color: var(--yellow-color); 
 }
 
 /* End Footer */
