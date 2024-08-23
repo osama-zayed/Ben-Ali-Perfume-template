@@ -116,12 +116,12 @@ ul {
   padding: 0;
   width: 150px;
   text-align: center;
+  font-weight: 600;
 }
 
 .navbar .navbar-brand:hover p,
 .navbar .navbar-brand:hover span {
   color: var(--dark-color);
-  font-weight: 400;
 }
 
 .navbar .navbar-brand p {
