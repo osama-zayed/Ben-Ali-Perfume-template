@@ -679,10 +679,6 @@ text-align: center;
     height: fit-content;
     overflow: hidden;
   }
-
-  .trademarks-section .img-fluid {
-    height: 30px;
-  }
 }
 
 /* End Trademarks-section*/
