@@ -728,7 +728,7 @@ text-align: center;
 /* End product-details */
 
 /* Start Card*/
-.Card img {
+/* .Card img {
   min-height: 35vh;
   min-width: 100%;
 }
@@ -737,7 +737,7 @@ text-align: center;
   .Card img {
     min-height: 20vh;
   }
-}
+} */
 
 /* End Card*/
 
@@ -1009,6 +1009,10 @@ text-align: center;
 .footer .contact ul svg {
   width: 20px;
   height: 20px;
+}
+.footer .contact ul svg:hover {
+  width: 24px;
+  height: 24px;
 }
 .footer .facebook {
   background-color: #1877f2; 
