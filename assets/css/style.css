@@ -121,6 +121,7 @@ ul {
 .navbar .navbar-brand:hover p,
 .navbar .navbar-brand:hover span {
   color: var(--dark-color);
+  font-weight: 400;
 }
 
 .navbar .navbar-brand p {
@@ -998,7 +999,7 @@ text-align: center;
 }
 
 .footer .copyright {
-  color: var(--gray2-color);
+  color: var(--dark-color);
 }
 
 .footer .copyright span {
