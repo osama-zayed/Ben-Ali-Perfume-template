@@ -3,7 +3,7 @@
   --gray-color: #f1f1f1;
   --gray2-color: #6c757d;
   /* --gray2-color: #908a72; */
-  --yellow-color: #bf9861;
+  --yellow-color: #977649;
   --section-color: #fff;
 }
 
@@ -105,7 +105,7 @@ ul {
 
 
 .navbar .navbar-brand:hover {
-  background-color: transparent;
+  background-color: var(--section-color);
 }
 
 .navbar .navbar-brand p,
