@@ -992,6 +992,11 @@ text-align: center;
   color: var(--dark-color);
 }
 
+.footer .links-title {
+  color: var(--dark-color);
+  font-size: large;
+}
+
 .footer .copyright>span {
   color: var(--dark-color);
 }
