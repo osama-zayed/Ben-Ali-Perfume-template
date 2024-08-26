@@ -178,7 +178,7 @@
   </section>
   <!-- Breadcrumb End -->
   <!-- product Detail Start -->
-  <section class="pd-product-detail">
+  <section class="pd-product-detail" id="product-detail">
     <div class="container">
       <div class="row">
         <!-- Image Slider -->
@@ -259,11 +259,11 @@
               <p class="text-end"><strong>الكمية:</strong>
               </p>
               <div class="d-flex align-items-center me-3">
-                <button class="btn border btn-minus" type="button">
+                <button class="btn border btn-minus" type="button" v-on:click="decrease">
                   <i class="fa fa-minus"></i>
                 </button>
-                <input type="text" class="form-control text-center mx-1" value="2" readonly>
-                <button class="btn border btn-plus" type="button">
+                <input type="text" class="form-control text-center mx-1" v-bind:value="quantity" readonly>
+                <button class="btn border btn-plus" type="button" v-on:click="increase">
                   <i class="fa fa-plus"></i>
                 </button>
               </div>
@@ -705,6 +705,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/all.min.js"></script>
   <script src="assets/js/flickity.pkgd.min.js"></script>

@@ -2,11 +2,11 @@ function openSearchModal() {
   document.getElementById("searchModal").style.display = "block";
 }
 
-window.onclick = function (event) {
+window.onclick = function(event) {
   if (event.target == document.getElementById("searchModal")) {
     document.getElementById("searchModal").style.display = "none";
   }
-}
+};
 // Carousel with "flickity" library
 const carousel = document.querySelector(".carousel");
 if (carousel) {
@@ -16,7 +16,7 @@ if (carousel) {
     pageDots: false,
     prevNextButtons: false,
     autoPlay: 5000, // Lecture automatique toutes les 5 secondes
-    draggable: true, // Activation du déplacement manuel
+    draggable: true // Activation du déplacement manuel
   });
 
   // Pause lors du survol
@@ -36,7 +36,7 @@ if (mainCarousel) {
     pageDots: false,
     prevNextButtons: false,
     autoPlay: 2000, // Lecture automatique toutes les 5 secondes
-    draggable: true, // Activation du déplacement manuel
+    draggable: true // Activation du déplacement manuel
   });
 
   // Pause lors du survol
@@ -54,9 +54,12 @@ flickityPrevNextButtons.forEach(button => {
   button.style.display = "none";
 });
 // إظهار الزر عند التمرير لأسفل الصفحة
-window.onscroll = function () {
+window.onscroll = function() {
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
     scrollToTopBtn.classList.add("show");
   } else {
     scrollToTopBtn.classList.remove("show");
@@ -64,22 +67,22 @@ window.onscroll = function () {
 };
 
 // التمرير إلى أعلى الصفحة عند الضغط على الزر
-document.getElementById("scrollToTopBtn").onclick = function () {
+document.getElementById("scrollToTopBtn").onclick = function() {
   window.scrollTo({
     top: 0,
     behavior: "smooth" // تأثير تمرير سلس
   });
 };
 
-window.addEventListener('load', function () {
-  var loadingScreen = document.getElementById('loading-screen');
+window.addEventListener("load", function() {
+  var loadingScreen = document.getElementById("loading-screen");
 
   function hideLoadingScreen() {
-    loadingScreen.style.display = 'none';
+    loadingScreen.style.display = "none";
   }
 
   function showLoadingScreen() {
-    loadingScreen.style.display = 'flex';
+    loadingScreen.style.display = "flex";
   }
 
   function checkInternetConnection() {
@@ -94,3 +97,24 @@ window.addEventListener('load', function () {
 
   checkInternetConnection();
 });
+
+
+// Vue.js
+const { createApp } = Vue;
+createApp({
+  data() {
+    return {
+      quantity: 0
+    };
+  },
+  methods: {
+    increase() {
+      this.quantity++;
+    },
+    decrease() {
+      if (this.quantity > 0) {
+        this.quantity--;
+      }
+    }
+  }
+}).mount("#product-detail");
